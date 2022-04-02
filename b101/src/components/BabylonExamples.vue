@@ -1,34 +1,29 @@
 <template>
-  <div><h3>Babylon Examples</h3>
-  <canvas></canvas>
+  <div>
+    <h3>Babylon Examples</h3>
+    <canvas></canvas>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import { BasicScene } from '@/BabylonExamples/BasicScene';
 
 export default defineComponent({
   name: 'BabylonExamples',
-  props: {
-    msg: String,
-  },
+  mounted() {
+    const canvas = document.querySelector("canvas")!;
+    new BasicScene(canvas);
+  }
 });
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+
+canvas {
+  width: 70%;
+  height: 70%;
 }
 </style>
+S

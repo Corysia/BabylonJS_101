@@ -24,6 +24,7 @@ sudo port install npm
 * Install `nve-setup` with an elivated shell
 * Update your path to point to the installation directory
 * Within an elivated shell, run these commands:
+
     ```bash
     nve install latest npm
     nve on
