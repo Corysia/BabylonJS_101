@@ -20,12 +20,12 @@ sudo port install npm
 
 ### Windows
 
-* Download nve from <https://github.com/coreybutler/nvm-windows>
-* Install `nve-setup` with an elivated shell
+* Download nvm from <https://github.com/coreybutler/nvm-windows>
+* Install `nvm-setup` with an elivated shell
 * Update your path to point to the installation directory
 * Within an elivated shell, run these commands:
 
     ```bash
-    nve install latest npm
-    nve on
+    nvm install latest npm
+    nvm on
     ```
